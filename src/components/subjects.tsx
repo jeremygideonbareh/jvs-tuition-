@@ -10,7 +10,7 @@ export function Subjects() {
   const track = SUBJECT_TRACKS.concat(SUBJECT_TRACKS);
 
   return (
-    <section id="subjects" className="overflow-hidden border-y border-border/60 bg-card/40 py-24 sm:py-28">
+    <section id="subjects" className="overflow-hidden border-y border-border/60 bg-white py-24 sm:py-28">
       <div className="container-site">
         <h2 className="max-w-3xl font-display text-3xl font-extrabold tracking-tight sm:text-5xl">
           School subjects and competitive tracks
@@ -41,7 +41,7 @@ export function Subjects() {
                 className="flex items-center gap-8 whitespace-nowrap font-display text-3xl font-bold text-foreground/80 sm:text-4xl"
               >
                 {subject}
-                <span className="h-2 w-2 rounded-full bg-primary" />
+                <span className="h-2 w-2 rounded-full bg-accent" />
               </span>
             ))}
           </div>

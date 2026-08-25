@@ -31,7 +31,7 @@ export function Contact() {
               rel="noreferrer"
               className="group flex items-start gap-4"
             >
-              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
               <div>
                 <p className="font-semibold">Address</p>
                 <p className="mt-1 text-sm text-muted-foreground group-hover:text-foreground">
@@ -40,7 +40,7 @@ export function Contact() {
               </div>
             </a>
             <a href={SITE.phoneHref} className="group flex items-start gap-4">
-              <Phone className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
               <div>
                 <p className="font-semibold">Phone / WhatsApp</p>
                 <p className="mt-1 text-sm text-muted-foreground group-hover:text-foreground">
@@ -49,7 +49,7 @@ export function Contact() {
               </div>
             </a>
             <div className="flex items-start gap-4">
-              <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <Clock className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
               <div>
                 <p className="font-semibold">Hours</p>
                 <p className="mt-1 text-sm text-muted-foreground">{SITE.hours}</p>

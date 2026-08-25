@@ -27,7 +27,7 @@ export function ScrollProgress() {
     >
       <div
         ref={barRef}
-        className="h-full w-0 origin-left bg-primary"
+        className="h-full w-0 origin-left bg-accent"
         style={{ width: "0%" }}
       />
     </div>

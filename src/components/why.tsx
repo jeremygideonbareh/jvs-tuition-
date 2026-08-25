@@ -29,7 +29,7 @@ export function Why() {
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16255C] via-[#16255C]/35 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 p-7">
             <p className="font-display text-2xl font-bold leading-snug">
               5.0 ★ rated across Law-U-Sib, Shillong
@@ -50,10 +50,10 @@ export function Why() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.7, ease, delay: 0.08 * i }}
-              className="group rounded-xl border border-border bg-card p-7 transition-colors hover:border-primary/50"
+              className="group rounded-xl border border-border bg-white p-7 transition-colors hover:border-accent/60"
             >
               <Icon
-                className="h-6 w-6 text-primary"
+                className="h-6 w-6 text-accent"
                 strokeWidth={1.75}
                 aria-hidden="true"
               />

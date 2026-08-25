@@ -42,7 +42,7 @@ export function Stats() {
     <section
       ref={sectionRef}
       aria-label="JV'S by the numbers"
-      className="border-y border-border/60 bg-card/40"
+      className="border-y border-border/60 bg-white"
     >
       <div className="container-site grid grid-cols-2 gap-x-6 gap-y-10 py-14 md:grid-cols-4">
         {STATS.map((s) => (

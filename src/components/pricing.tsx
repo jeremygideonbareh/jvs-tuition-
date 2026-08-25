@@ -12,7 +12,7 @@ export function Pricing() {
   const [term, setTerm] = React.useState(false);
 
   return (
-    <section id="pricing" className="border-t border-border/60 bg-card/40 py-24 sm:py-32">
+    <section id="pricing" className="border-t border-border/60 bg-white py-24 sm:py-32">
       <div className="container-site">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
@@ -59,12 +59,12 @@ export function Pricing() {
                 transition={{ duration: 0.7, ease, delay: 0.08 * i }}
                 className={`relative flex flex-col rounded-xl border p-7 ${
                   plan.highlight
-                    ? "border-primary bg-background shadow-[0_0_60px_-20px_rgba(255,77,46,0.35)]"
+                    ? "border-secondary bg-background shadow-[0_0_60px_-18px_rgba(223,108,79,0.4)]"
                     : "border-border bg-background"
                 }`}
               >
                 {plan.highlight && (
-                  <span className="absolute -top-3 left-6 rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">
+                  <span className="absolute -top-3 left-6 rounded-full bg-accent px-3 py-1 text-xs font-bold text-accent-foreground">
                     Most chosen
                   </span>
                 )}
@@ -104,7 +104,7 @@ export function Pricing() {
 
                 <div className="mt-auto pt-8">
                   <Button
-                    variant={plan.highlight ? "default" : "outline"}
+                    variant={plan.highlight ? "accent" : "default"}
                     className="w-full font-semibold"
                     onClick={() => scrollToId("#inquiry")}
                   >

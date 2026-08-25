@@ -35,7 +35,7 @@ export function Nav() {
           onClick={(e) => go(e, "#top")}
           className="font-display text-lg font-extrabold tracking-tight"
         >
-          JV<span className="text-primary">'</span>S
+          JV<span className="text-accent"></span>S
         </a>
 
         <div className="hidden items-center gap-7 lg:flex">
@@ -57,7 +57,7 @@ export function Nav() {
             onClick={(e) => go(e, "#inquiry")}
             className="hidden lg:block"
           >
-            <Button size="sm">Book a trial</Button>
+            <Button size="sm" variant="accent">Book a trial</Button>
           </a>
           <button
             className="grid h-9 w-9 place-items-center rounded-md text-foreground lg:hidden"
@@ -87,7 +87,7 @@ export function Nav() {
               onClick={(e) => go(e, "#inquiry")}
               className="mt-2"
             >
-              <Button className="w-full">Book a trial</Button>
+              <Button className="w-full" variant="accent">Book a trial</Button>
             </a>
           </div>
         </div>

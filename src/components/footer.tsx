@@ -3,11 +3,11 @@ import { scrollToId } from "@/components/scroll-provider";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/60 bg-card/40">
+    <footer className="border-t border-border/60 bg-white">
       <div className="container-site grid grid-cols-1 gap-10 py-16 md:grid-cols-3">
         <div>
           <p className="font-display text-lg font-extrabold tracking-tight">
-            JV<span className="text-primary">'</span>S Tuition
+            JV<span className="text-accent"></span>S Tuition
           </p>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             {SITE.tagline}. Coaching the next generation of Shillong since day

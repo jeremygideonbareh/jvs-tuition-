@@ -112,7 +112,7 @@ export function Inquiry() {
                 transition={{ duration: 0.5, ease }}
                 className="flex min-h-[420px] flex-col items-center justify-center text-center"
               >
-                <CheckCircle2 className="h-14 w-14 text-primary" strokeWidth={1.5} />
+                <CheckCircle2 className="h-14 w-14 text-accent" strokeWidth={1.5} />
                 <h3 className="mt-6 font-display text-2xl font-bold">
                   Enquiry received
                 </h3>
@@ -234,7 +234,7 @@ export function Inquiry() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-primary px-6 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-accent px-6 text-sm font-semibold text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
                 >
                   {status === "sending" ? (
                     <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />

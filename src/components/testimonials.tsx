@@ -21,7 +21,7 @@ export function Testimonials() {
   const current = TESTIMONIALS[index];
 
   return (
-    <section id="reviews" className="border-t border-border/60 bg-card/40 py-24 sm:py-32">
+    <section id="reviews" className="border-t border-border/60 bg-white py-24 sm:py-32">
       <div className="container-site">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
@@ -31,7 +31,7 @@ export function Testimonials() {
             <div className="mt-4 flex items-center gap-2">
               <div className="flex gap-0.5" aria-hidden="true">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                  <Star key={i} className="h-4 w-4 fill-accent text-accent" />
                 ))}
               </div>
               <span className="text-sm font-semibold">{SITE.rating}</span>
@@ -47,14 +47,14 @@ export function Testimonials() {
                 setIndex((i) => (i - 1 + TESTIMONIALS.length) % TESTIMONIALS.length)
               }
               aria-label="Previous testimonial"
-              className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+              className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
             <button
               onClick={() => setIndex((i) => (i + 1) % TESTIMONIALS.length)}
               aria-label="Next testimonial"
-              className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+              className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -89,7 +89,7 @@ export function Testimonials() {
               onClick={() => setIndex(i)}
               aria-label={`Go to testimonial ${i + 1}`}
               className={`h-1.5 rounded-full transition-all ${
-                i === index ? "w-8 bg-primary" : "w-3 bg-secondary"
+                i === index ? "w-8 bg-accent" : "w-3 bg-secondary"
               }`}
             />
           ))}

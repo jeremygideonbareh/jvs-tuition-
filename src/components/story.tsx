@@ -70,7 +70,7 @@ export function Story() {
       <div className="container-site">
         <div className="flex items-center gap-4">
           <span className="micro-label text-primary">The JV'S Standard</span>
-          <span className="story-line h-px w-full max-w-[12rem] origin-left scale-x-0 bg-primary/60" />
+          <span className="story-line h-px w-full max-w-[12rem] origin-left scale-x-0 bg-accent/70" />
         </div>
 
         <div className="mt-6 flex flex-wrap items-baseline gap-x-3">

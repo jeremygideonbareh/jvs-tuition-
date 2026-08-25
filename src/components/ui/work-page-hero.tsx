@@ -162,7 +162,7 @@ export const WorkPageHero: React.FC<WorkPageHeroProps> = ({
             <span
               className="font-black uppercase tracking-tighter leading-none select-none text-left"
               style={{
-                color: "#FF4D2E",
+                color: "#DF6C4F",
                 fontSize: "clamp(2.5rem, 8.5vw, 8.5rem)",
                 fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
               }}
@@ -174,7 +174,7 @@ export const WorkPageHero: React.FC<WorkPageHeroProps> = ({
           {/* Right Word: student */}
           <div className="absolute right-[4%] top-[38%] flex items-center justify-end">
             <span
-              className="font-black uppercase tracking-tighter leading-none select-none text-right drop-shadow-lg text-foreground"
+              className="font-black uppercase tracking-tighter leading-none select-none text-right drop-shadow-[0_2px_10px_rgba(22,37,92,0.55)] text-white"
               style={{
                 fontSize: "clamp(2.5rem, 8.5vw, 8.5rem)",
                 fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
@@ -189,7 +189,7 @@ export const WorkPageHero: React.FC<WorkPageHeroProps> = ({
             <span
               className="font-normal italic uppercase leading-none select-none text-right"
               style={{
-                color: "#FF4D2E",
+                color: "#2CBFA1",
                 fontSize: "clamp(3rem, 10.5vw, 9.5rem)",
                 fontFamily: "var(--font-display)",
               }}

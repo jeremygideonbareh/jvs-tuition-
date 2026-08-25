@@ -36,14 +36,14 @@ export function Schedule() {
           </p>
         </div>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <CalendarDays className="h-4 w-4 text-primary" aria-hidden="true" />
+          <CalendarDays className="h-4 w-4 text-accent" aria-hidden="true" />
           <span>Open 8:00 am – 7:00 pm · Mon–Sat</span>
         </div>
       </div>
 
       <div className="mt-10 overflow-x-auto">
         <div className="min-w-[720px] rounded-xl border border-border">
-          <div className="grid grid-cols-[130px_repeat(6,1fr)] border-b border-border bg-card/60">
+          <div className="grid grid-cols-[130px_repeat(6,1fr)] border-b border-border bg-white">
             <div className="p-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Session
             </div>
@@ -79,12 +79,12 @@ export function Schedule() {
                     {open ? (
                       <button
                         onClick={() => reserve(day, session.time)}
-                        className="rounded-full border border-primary/40 px-3 py-1.5 text-xs font-semibold text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+                        className="rounded-full border border-accent/50 px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-accent hover:text-accent-foreground"
                       >
                         Reserve
                       </button>
                     ) : (
-                      <span className="rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-muted-foreground">
+                      <span className="rounded-full bg-muted px-3 py-1.5 text-xs font-medium text-muted-foreground">
                         Waitlist
                       </span>
                     )}
@@ -97,7 +97,7 @@ export function Schedule() {
       </div>
 
       <p className="mt-4 text-xs text-muted-foreground">
-        Tap <span className="text-primary">Reserve</span> to pre-fill the enquiry
+        Tap <span className="font-semibold text-foreground">Reserve</span> to pre-fill the enquiry
         with your preferred slot. Slots shown are indicative.
       </p>
     </section>
