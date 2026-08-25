@@ -43,7 +43,14 @@ export function ScrollProvider({ children }: { children: React.ReactNode }) {
     gsap.ticker.add(tick);
     gsap.ticker.lagSmoothing(0);
 
+    // Re-measure pins after fonts/Lenis settle so ScrollTrigger positions are exact.
+    const refreshTimer = window.setTimeout(() => ScrollTrigger.refresh(), 500);
+    const onLoad = () => ScrollTrigger.refresh();
+    window.addEventListener("load", onLoad, { once: true });
+
     return () => {
+      window.clearTimeout(refreshTimer);
+      window.removeEventListener("load", onLoad);
       gsap.ticker.remove(tick);
       lenis.destroy();
       window.__lenis = null;

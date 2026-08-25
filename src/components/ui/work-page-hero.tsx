@@ -75,7 +75,7 @@ export const WorkPageHero: React.FC<WorkPageHeroProps> = ({
   backgroundColor = "transparent",
   showClocks = true,
   clocks = DEFAULT_CLOCKS,
-  scrollDistance = "+=150%",
+  scrollDistance = "+=250%",
   className = "",
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -97,7 +97,14 @@ export const WorkPageHero: React.FC<WorkPageHeroProps> = ({
         return;
       }
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        gsap.set(textGroupRef.current, { opacity: 1 });
+        // Reduced motion: show the full-bleed video state statically (no scrub).
+        gsap.set(videoWrapperRef.current, {
+          top: "0%",
+          left: "0%",
+          right: "0%",
+          bottom: "0%",
+          borderRadius: "0rem",
+        });
         return;
       }
 

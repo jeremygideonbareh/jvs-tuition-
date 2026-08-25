@@ -18,7 +18,7 @@ export default function App() {
     <ScrollProvider>
       <ScrollProgress />
       <Nav />
-      <main className="relative w-full max-w-full overflow-x-hidden">
+      <main className="relative w-full max-w-full overflow-x-clip">
         <Hero />
         <Stats />
         <Story />

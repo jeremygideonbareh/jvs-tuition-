@@ -5,8 +5,8 @@
 @layer base {
   :root,
   .light {
-    /* JV'S light palette — blush-pink canvas, navy structure, teal + terracotta accents */
-    --background: 357 100% 79%;     /* #FF9398 blush pink */
+    /* JV'S light palette — white canvas, navy structure, teal + terracotta accents */
+    --background: 0 0% 100%;        /* white */
     --foreground: 227 61% 22%;      /* #16255C deep navy */
     --card: 0 0% 100%;              /* white */
     --card-foreground: 227 61% 22%;
@@ -18,12 +18,12 @@
     --secondary-foreground: 227 61% 22%;
     --accent: 168 63% 46%;          /* #2CBFA1 emerald teal — interactive accent */
     --accent-foreground: 227 61% 22%;
-    --muted: 0 0% 100%;
-    --muted-foreground: 227 38% 30%; /* navy-70 — AA on pink */
+    --muted: 220 22% 97%;           /* near-white neutral for pills */
+    --muted-foreground: 227 38% 30%; /* navy-70 — AA on white */
     --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 98%;
-    --border: 228 35% 86%;          /* soft periwinkle wireframe */
-    --input: 228 35% 86%;
+    --border: 228 30% 84%;          /* soft periwinkle wireframe */
+    --input: 228 30% 84%;
     --ring: 168 63% 46%;
     --radius: 0.75rem;
 
@@ -43,7 +43,8 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: var(--font-sans);
-    overflow-x: hidden;
+    /* clip (not hidden) avoids creating a scroll container so GSAP ScrollTrigger pinning works */
+    overflow-x: clip;
   }
 
   .font-display {
