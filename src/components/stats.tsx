@@ -47,7 +47,7 @@ export function Stats() {
       <div className="container-site grid grid-cols-2 gap-x-6 gap-y-10 py-14 md:grid-cols-4">
         {STATS.map((s) => (
           <div key={s.label} className="text-center">
-            <div className="font-display text-4xl font-extrabold text-primary sm:text-5xl">
+            <div className="font-mono text-4xl font-bold tabular-nums text-primary sm:text-5xl">
               <span data-count={s.value} data-decimals={s.decimals}>
                 {s.value.toFixed(s.decimals)}
               </span>

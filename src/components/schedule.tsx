@@ -67,7 +67,7 @@ export function Schedule() {
               className="grid grid-cols-[130px_repeat(6,1fr)] border-b border-border/60 last:border-b-0"
             >
               <div className="flex flex-col justify-center p-3">
-                <span className="font-display text-sm font-bold">{session.time}</span>
+                <span className="font-mono text-sm font-bold tabular-nums">{session.time}</span>
                 <span className="text-[11px] text-muted-foreground">
                   {session.label}
                 </span>

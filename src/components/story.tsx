@@ -90,7 +90,7 @@ export function Story() {
               key={beat.kicker}
               className="story-beat absolute inset-0 flex items-start gap-6 opacity-0"
             >
-              <span className="font-display text-sm font-bold text-primary tabular-nums">
+              <span className="font-mono text-sm font-bold text-primary tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="max-w-2xl">
