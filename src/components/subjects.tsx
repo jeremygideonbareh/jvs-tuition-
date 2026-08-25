@@ -22,7 +22,7 @@ export function Subjects() {
       </div>
 
       <div
-        className="mt-12 border-y border-border/60 py-6"
+        className="mt-12 border-y border-border/60 bg-[#FF9398]/10 py-6"
         style={{
           maskImage:
             "linear-gradient(90deg, transparent, black 8%, black 92%, transparent)",

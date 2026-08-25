@@ -17,8 +17,8 @@ export function Hero() {
       />
 
       <div className="relative z-30 mx-auto max-w-4xl px-4 pb-16 pt-24 text-center sm:py-16">
-        <div className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-semibold text-foreground">
-          <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+        <div className="inline-flex items-center gap-2 rounded-full border border-[#FF9398]/50 bg-[#FF9398]/15 px-4 py-1.5 text-xs font-semibold text-foreground">
+          <Sparkles className="h-3.5 w-3.5 text-[#FF9398]" aria-hidden="true" />
           <span>5.0 ★ · {SITE.reviews} Google reviews</span>
         </div>
 
